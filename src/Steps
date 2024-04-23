@@ -1,0 +1,71 @@
+Part 1:
+Did you describe the problem you are trying to solve?
+    Trying to make online banking an easier process for customer. Quick transfer of money, easy withdrawal, etc.
+Did you describe any input data you expect to use?
+    Text input for password, username, etc, integer input for currency amount
+Did you describe what the program will do to solve the problem?
+    It will make it easier for customer to access their bank account and move money around
+Did you describe any outputs or results the program will provide?
+    It will move money to different accounts with receipts, and will provide details of bank account if asked
+
+
+Part 2:
+Did you write down clear and specific steps to solve a simple version of your problem you identified in Part 1?
+    Make a bank class -> Make User class. User class has attributes which allow bank customer to solve problems identified
+Did you state any necessary input data for your simplified problem?
+    For customer -> First Name, Last Name, Username/Account number, Password, Checking/Savings Number, Current Balance, Function to Add Money, Function to Withdraw Money, Function to Transfer Money, and Function to Login
+Did you write clear and specific steps in English (not Java) detailing what the program will do to solve the problem?
+    It will allow customer to create/login to their account, add money within their account, withdraw money, and transfer to other accounts all within the app.
+Did you describe the specific result of your example/scenario?
+    Allow customer to save time by not having to drive to bank. Makes transfering money to other people much simpler
+
+PART 3: Generalizing Into Pseudocode
+Did you write out the general sequence your program will use, including all specific examples/scenarios you provided in Part 2?
+    Class Bank {
+        ArrayList<User/Customer> customers;
+
+        public void login(String userNameGiven, int accountNumberGiven, String password) {
+            //Prompt user to enter info & can't get passed screen until correctly inputted
+
+            //Ask customer for userName or accountNumber and check password
+                //If password incorrect ask customer to reenter info
+            //If correct print account info and ask what customer would like to do
+        }
+    //Bank has all user data
+        Class User/Customer {
+            String first;
+            String last;
+            //Identify account by accountNumber &/or userName
+            String userName;
+            int accountNumber;
+            String password;
+            int checkingAccount;
+            int balance;
+
+            public void addMoney(int amount) {
+                //Add money to checkingAccount balance
+
+                //Print result
+            }
+            public void withdrawMoney(int amount) {
+                //Remove money from checkinAccount balance
+
+                //Print result
+            }
+
+            public void transferMoney(int amount, int accountNumber, String userName) {
+                //Check customer list and check if accountNumber & userName match with a customer
+                    //If no match print failed and retry
+                //If match -> access the account and add amount to checkingAccount
+                    //Print success
+            }
+
+            public void logOut() {
+                //Exit program
+            }
+        }
+    }
+
+Did you write pseudocode for the program in English but refer to Java program elements where they are appropriate?
+Does the pseudocode represent the full functionality of the program, not just a simplified version?
+Is the pseudocode broken down enough that the details of the program are no longer in any paragraph form?
